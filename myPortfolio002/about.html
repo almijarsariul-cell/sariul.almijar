@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Almijar Sariul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white transition-colors duration-300" id="body">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center z-[9999]">
+        <div class="text-center">
+            <div class="mb-8">
+                <div class="w-16 h-16 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin mx-auto"></div>
+            </div>
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">Loading</h1>
+            <p class="text-slate-400 text-sm">Welcome to my portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-cyan-500/20">
+        <div class="max-w-full mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="lg:hidden flex items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">&lt;/&gt;</a>
+            </div>
+            <div class="flex-1"></div>
+            <div class="flex items-center gap-4 sm:gap-8">
+                <div class="hidden md:flex gap-4 sm:gap-8">
+                    <a href="about.html" class="nav-link text-lg font-semibold hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="skills.html" class="nav-link text-lg font-semibold hover:text-cyan-400 transition-colors duration-300">Skills</a>
+                    <a href="projects.html" class="nav-link text-lg font-semibold hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                    <a href="photos.html" class="nav-link text-lg font-semibold hover:text-cyan-400 transition-colors duration-300">Photos</a>
+                    <a href="contact.html" class="nav-link text-lg font-semibold hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                </div>
+                <button id="mobileMenuToggle" class="md:hidden text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <button id="themeToggle" class="p-2 rounded-lg bg-cyan-500/20 border border-cyan-500 hover:bg-cyan-500/40 transition-all duration-300">
+                    <i class="fas fa-moon text-cyan-400"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-t border-cyan-500/20 px-6 py-4 space-y-3">
+            <a href="about.html" class="block text-base font-semibold hover:text-cyan-400 transition-colors duration-300">About</a>
+            <a href="skills.html" class="block text-base font-semibold hover:text-cyan-400 transition-colors duration-300">Skills</a>
+            <a href="projects.html" class="block text-base font-semibold hover:text-cyan-400 transition-colors duration-300">Projects</a>
+            <a href="photos.html" class="block text-base font-semibold hover:text-cyan-400 transition-colors duration-300">Photos</a>
+            <a href="contact.html" class="block text-base font-semibold hover:text-cyan-400 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-16 pb-28 md:pb-16">
+        <h1 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            About Me
+        </h1>
+
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/50 backdrop-blur-md border border-cyan-500/20 rounded-2xl p-10 shadow-2xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <div id="profileCircle" class="relative w-48 h-48 md:w-56 md:h-56 overflow-hidden rounded-full border-4 border-cyan-400/50 shadow-lg shadow-cyan-500/30 cursor-pointer">
+                        <img src="myProfile.JPG" alt="Almijar Sariul" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 to-blue-500/20"></div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <p class="text-2xl font-bold text-cyan-400">Almijar Sariul</p>
+                        <p class="text-base text-cyan-300">First-year BSIT Student</p>
+                    </div>
+
+                    <p class="text-base leading-8 text-slate-300">
+                        I am a passionate first-year Bachelor of Science in Information Technology (BSIT) student at <span class="font-semibold text-cyan-300">Universidad de Zamboanga</span>. Currently, I am in the process of developing my skills in programming and coding, with a strong drive to excel in the field of technology.
+                    </p>
+
+                    <div class="h-1 w-16 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+
+                    <p class="text-base leading-8 text-slate-300">
+                        I have a foundational understanding of <span class="font-semibold text-cyan-300">C++</span>, <span class="font-semibold text-cyan-300">HTML</span>, and <span class="font-semibold text-cyan-300">CSS</span>, and I am now focusing on learning <span class="font-semibold text-cyan-300">C#</span>. As I continue to expand my knowledge and experience, I aspire to become a <span class="font-semibold text-blue-300">front-end or web developer</span> in the future.
+                    </p>
+
+                    <p class="text-base leading-8 text-slate-300">
+                        I am <span class="font-semibold">determined to pursue this degree with dedication</span> in order to achieve my dream career in the field of web development. Every challenge is an opportunity to grow and refine my craft.
+                    </p>
+
+                    <div class="pt-4">
+                        <a href="contact.html" class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Mobile Nav -->
+    <nav id="bottomMobileNav" class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-cyan-500/30 shadow-2xl shadow-cyan-500/10">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent"></div>
+        <div class="flex items-center justify-around px-2 py-2">
+            <a href="about.html" class="bottom-nav-item flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-300 group">
+                <div class="bottom-nav-icon w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-user text-base text-cyan-400 transition-colors duration-300"></i>
+                </div>
+                <span class="text-[10px] font-semibold text-cyan-400 transition-colors duration-300">About</span>
+            </a>
+            <a href="skills.html" class="bottom-nav-item flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-300 group">
+                <div class="bottom-nav-icon w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-code text-base text-slate-400 group-hover:text-cyan-400 transition-colors duration-300"></i>
+                </div>
+                <span class="text-[10px] font-semibold text-slate-500 group-hover:text-cyan-400 transition-colors duration-300">Skills</span>
+            </a>
+            <a href="projects.html" class="bottom-nav-item flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-300 group">
+                <div class="bottom-nav-icon w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-briefcase text-base text-slate-400 group-hover:text-cyan-400 transition-colors duration-300"></i>
+                </div>
+                <span class="text-[10px] font-semibold text-slate-500 group-hover:text-cyan-400 transition-colors duration-300">Projects</span>
+            </a>
+            <a href="photos.html" class="bottom-nav-item flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-300 group">
+                <div class="bottom-nav-icon w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-image text-base text-slate-400 group-hover:text-cyan-400 transition-colors duration-300"></i>
+                </div>
+                <span class="text-[10px] font-semibold text-slate-500 group-hover:text-cyan-400 transition-colors duration-300">Photos</span>
+            </a>
+            <a href="contact.html" class="bottom-nav-item flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-300 group">
+                <div class="bottom-nav-icon w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-envelope text-base text-slate-400 group-hover:text-cyan-400 transition-colors duration-300"></i>
+                </div>
+                <span class="text-[10px] font-semibold text-slate-500 group-hover:text-cyan-400 transition-colors duration-300">Contact</span>
+            </a>
+        </div>
+        <div style="height: env(safe-area-inset-bottom, 0px);"></div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

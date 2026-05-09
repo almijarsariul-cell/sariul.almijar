@@ -1,0 +1,132 @@
+========================================
+⚡ QUICK START GUIDE - RUN YOUR PORTFOLIO
+========================================
+
+🎯 WHAT YOU NEED:
+✓ All HTML files (index.html, about.html, skills.html, projects.html, photos.html, contact.html)
+✓ styles.css
+✓ script.js
+✓ Image files (myProfile.JPG, c++.png, html.png, css.png, cs.png)
+
+⚠️ IMPORTANT: All files must be in the SAME FOLDER!
+
+------------ METHOD 1: SIMPLEST WAY (Recommended) ------------
+
+1. Create a folder on your computer (e.g., "Portfolio" or "myPortfolio")
+2. Put ALL files in that folder
+3. Double-click "index.html"
+4. Your portfolio opens in your browser
+5. DONE! ✅
+
+------------ METHOD 2: USING LOCAL SERVER (Windows) -----------
+
+Windows 10/11:
+1. Download and install Python from python.org
+2. Open Command Prompt
+3. Go to your portfolio folder: cd "C:\path\to\your\portfolio"
+4. Run: python -m http.server 8000
+5. Open browser to: http://localhost:8000
+6. Press Ctrl+C to stop the server
+
+------------ METHOD 3: USING LOCAL SERVER (Mac/Linux) --------
+
+1. Open Terminal
+2. Go to your portfolio folder: cd ~/Desktop/portfolio
+3. Run: python3 -m http.server 8000
+4. Open browser to: http://localhost:8000
+5. Press Ctrl+C to stop the server
+
+------------ TROUBLESHOOTING -----------
+
+❌ Problem: Blank page or won't load
+✓ Solution: Check all files are in same folder
+✓ Solution: Try opening with different browser
+✓ Solution: Check internet (for loading external libraries)
+
+❌ Problem: Images showing as broken
+✓ Solution: Make sure image files are in same folder
+✓ Solution: Check spelling: myProfile.JPG, c++.png, html.png, css.png, cs.png
+✓ Solution: For Mac users, check if file extensions are correct
+
+❌ Problem: Styles look weird/broken
+✓ Solution: Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)
+✓ Solution: Clear browser cache and reload
+✓ Solution: Try a different browser
+
+❌ Problem: Theme toggle not working
+✓ Solution: Refresh the page
+✓ Solution: Try incognito/private browsing mode
+✓ Solution: Check browser allows localStorage
+
+❌ Problem: Hamburger menu not working on mobile
+✓ Solution: Make sure script.js is in same folder
+✓ Solution: Check browser console for errors (F12)
+
+------------ FILE CHECKLIST -----------
+
+Required Files (✓ check these):
+☐ index.html
+☐ about.html
+☐ skills.html
+☐ projects.html
+☐ photos.html
+☐ contact.html
+☐ styles.css
+☐ script.js
+☐ myProfile.JPG
+☐ c++.png
+☐ html.png
+☐ css.png
+☐ cs.png
+
+All checked? You're ready to go! ✅
+
+------------ AFTER IT'S WORKING -----------
+
+1. Edit about.html to change your bio
+2. Edit contact.html to add your real social media links
+3. Replace myProfile.JPG with your photo
+4. Update skills, projects, and photos sections
+5. Test in both light and dark modes (click moon icon)
+6. Test on mobile (press F12 and click device icon)
+
+------------ UPLOAD TO GITHUB -----------
+
+1. Create GitHub account at github.com
+2. Create new repository
+3. Upload all files
+4. Go to Settings → Pages
+5. Deploy from main branch
+6. Share your portfolio link!
+
+------------ COMMON FILE ISSUES -----------
+
+Issue: File named "c++.png" won't load
+Solution: Windows may have issues with "++" in filename
+Fix: Use this instead in HTML: "c__.png" (two underscores)
+
+Issue: Mac doesn't show .JPG files properly
+Solution: Try uppercase: myProfile.JPG
+Solution: Or convert to .jpg (lowercase)
+
+------------ NEED HELP? -----------
+
+1. Check README.md for detailed information
+2. Open browser DevTools (F12 key)
+3. Look at Console tab for error messages
+4. Common errors help identify the problem
+5. Most issues are file path or missing file related
+
+------------ KEY POINTS -----------
+
+✅ All files must be in same folder
+✅ File names are case-sensitive on Mac/Linux
+✅ Image extensions must be exact (e.g., .JPG not .jpg unless that's the actual name)
+✅ styles.css and script.js must be in same folder
+✅ Works on any modern browser
+✅ No server setup needed for basic use
+✅ For production, use GitHub Pages or web hosting
+
+========================================
+Ready? Start with METHOD 1 above! 🚀
+========================================
